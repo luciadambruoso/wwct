@@ -464,3 +464,10 @@ address { font-style: normal; }
   .hero-split-img img { height: clamp(240px, 44vh, 360px); }
   .hero-split-text { padding: 2.75rem 1.25rem 3rem; max-width: none; }
 }
+
+/* Upright photograph beside a column of text */
+.split-tall { align-items: start; }
+.split-tall img { aspect-ratio: 3 / 4; }
+@media (max-width: 46rem) {
+  .split-tall img { aspect-ratio: 4 / 3; }
+}
