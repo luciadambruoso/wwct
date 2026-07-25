@@ -423,3 +423,12 @@ address { font-style: normal; }
 @media (max-width: 46rem) {
   .split { grid-template-columns: 1fr; gap: 1.75rem; }
 }
+
+/* Homepage: photograph above the title band */
+.hero-photo img {
+  width: 100%;
+  height: clamp(260px, 52vh, 520px);
+  object-fit: cover;
+  display: block;
+}
+.hero-solid .hero-inner { padding: 3.75rem 0 3.5rem; }
