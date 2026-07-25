@@ -394,3 +394,20 @@ address { font-style: normal; }
     transition-duration: .01ms !important;
   }
 }
+
+/* Galleries with no photographs yet: a gravel block in place of a thumbnail */
+.record-blank {
+  aspect-ratio: 3 / 2;
+  background:
+    radial-gradient(circle at 14px 22px, var(--stone) 0 5px, transparent 5.5px),
+    radial-gradient(circle at 44px 14px, var(--moss) 0 3.5px, transparent 4px),
+    radial-gradient(circle at 72px 30px, var(--gorse) 0 4px, transparent 4.5px),
+    radial-gradient(circle at 100px 18px, var(--stone) 0 3px, transparent 3.5px);
+  background-size: 124px 44px;
+  background-color: var(--quartz);
+  opacity: .8;
+}
+
+/* News items with no photograph */
+.news-item-text { grid-template-columns: 1fr; }
+.news-item-text .prose { max-width: var(--measure); }
