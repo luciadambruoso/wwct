@@ -411,3 +411,15 @@ address { font-style: normal; }
 /* News items with no photograph */
 .news-item-text { grid-template-columns: 1fr; }
 .news-item-text .prose { max-width: var(--measure); }
+
+/* Image beside text (home feature, donate) */
+.split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 3rem;
+  align-items: center;
+}
+.split img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+@media (max-width: 46rem) {
+  .split { grid-template-columns: 1fr; gap: 1.75rem; }
+}
